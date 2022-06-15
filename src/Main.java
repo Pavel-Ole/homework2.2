@@ -1,18 +1,18 @@
 public class Main {
     public static void main(String[] args) {
 
-        int schet = 250; // начальный счет клиента
-        int add = 750; // пополнение счета клиента
-        int fullSchet = schet + add; // полный счет клиента
+        int check = 250; // начальный счет клиента
+        int add = 1750; // пополнение счета клиента
+        int fullCheck = check + add; // полный счет клиента
 
-        boolean addSchet = fullSchet > 1000;
+        boolean addCheck = fullCheck > 1000;
         int bonus;
-        if (addSchet == true) {
-            bonus = fullSchet / 100;
+        if (addCheck) {
+            bonus = fullCheck / 100;
         } else {
             bonus = 0;
         }
         System.out.println((bonus) + " сумма бонуса");
-        System.out.println((fullSchet + bonus) + " итоговая сумма");
+        System.out.println((fullCheck + bonus) + " итоговая сумма");
     }
 }
